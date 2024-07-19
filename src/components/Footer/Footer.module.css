@@ -1,0 +1,21 @@
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.sendEmail {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 120px;
+}
+
+.formType {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 100px;
+    display: flex;
+    gap: 500px;
+}

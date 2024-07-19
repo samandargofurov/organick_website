@@ -50,6 +50,7 @@ select {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: rgba(39, 76, 91, 1);
+    background: transparent;
 }
 
 .search_cart {
