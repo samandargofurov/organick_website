@@ -384,7 +384,7 @@ const Home = () => {
           <div className={styles.twoProductsComment}>
             <div className={styles.firstComment}>
               <span className={styles.barg_img}>
-                <img src={barg} alt="" width={480} />
+                <img src={barg} alt="" width={534} />
               </span>
               <div className={styles.firstText}>
                 <div className={styles.date}>
@@ -413,7 +413,7 @@ const Home = () => {
 
             <div className={styles.secondComment}>
               <span>
-                <img src={tometos} alt="" width={480} />
+                <img src={tometos} alt="" width={534} />
               </span>
               <div className={styles.secondText}>
                 <div className={styles.date}>

@@ -1,3 +1,8 @@
+import footerOrganicLogo from "../../assets/Logo.svg";
+import insta from "../../assets/Insta.svg";
+import facebook from "../../assets/Fb.svg";
+import x from "../../assets/Twiter.svg";
+import pintrest from "../../assets/Pintrest.svg";
 import footerImg from "../../assets/BackgroundFooter.png";
 
 import styles from "./Footer.module.css";
@@ -19,6 +24,69 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className={styles.footer_container}>
+        <div className={styles.footerContact}>
+          {/* contact Us */}
+          <div className={styles.contactUs}>
+            <h2 className={styles.contactTitle}>Contact Us</h2>
+            <div className={styles.email}>
+              <span>Email</span>
+              <span className={styles.emailPlaceholder}>needhelp@Organia.com</span>
+            </div>
+            <div className={styles.phone}>
+              <span>Phone</span>
+              <span>555 777 888</span>
+            </div>
+            <div className={styles.address}>
+              <span>Address</span>
+              <span>88 road, borklyn street, USA</span>
+            </div>
+          </div>
+          {/* footer organic */}
+          <div className={styles.footerOrganic}>
+            <div className={styles.footerLogo}>
+              <img src={footerOrganicLogo} alt="" />
+              <h2>Organick</h2>
+            </div>
+            <p className={styles.footerOrganicDesc}>
+              Simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum simply dummy text of the printing{" "}
+            </p>
+            <div className={styles.social_media}>
+              <span>
+                <img src={insta} alt="" />
+              </span>
+              <span>
+                <img src={facebook} alt="" />
+              </span>
+              <span>
+                <img src={x} alt="" />
+              </span>
+              <span>
+                <img src={pintrest} alt="" />
+              </span>
+            </div>
+          </div>
+          {/* utility pages */}
+          <div className={styles.utilityPages}>
+            <h4 className={styles.utilityTitle}>Utility Pages</h4>
+            <div className={styles.pages}>
+              <span>Style Guide</span>
+              <span>404 Not Found</span>
+              <span>Password Protected</span>
+              <span>Licences</span>
+              <span>Changelog</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.footerEnd}>
+        <div className={styles.footerEndTitle}>
+          Copyright<span>©</span>
+          <span>Organick</span>
         </div>
       </div>
     </>

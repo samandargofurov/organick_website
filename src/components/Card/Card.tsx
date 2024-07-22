@@ -7,8 +7,8 @@ import bean from "../../assets/bean-removebg-preview.png";
 import hazelnut from "../../assets/hazelnut-removebg-preview.png";
 import russianBread from "../../assets/russianBread-removebg-preview.png";
 import eggs from "../../assets/eggs-removebg-preview.png";
-import arrow from "../../assets/Aerrow.svg";
 import star from "../../assets/Star.svg";
+import arrow from "../../assets/Aerrow.svg";
 
 const Card = () => {
   return (
