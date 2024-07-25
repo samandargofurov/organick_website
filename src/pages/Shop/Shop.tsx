@@ -1,18 +1,20 @@
-import bgShopPattern from "../../assets/shopBgPatterns.png";
-import shopImage from "../../assets/ShopImage.png";
-import broccoli from "../../assets/broccoli-removebg-preview.png";
-import bananas from "../../assets/bananas-removebg-preview.png";
-import nuts from "../../assets/nuts-removebg-preview.png";
-import tomatos from "../../assets/tomatos-removebg-preview.png";
-import bean from "../../assets/bean-removebg-preview.png";
-import hazelnut from "../../assets/hazelnut-removebg-preview.png";
-import russianBread from "../../assets/russianBread-removebg-preview.png";
-import eggs from "../../assets/eggs-removebg-preview.png";
-import newcucumber from "../../assets/shopCucumber-removebg-preview.png";
-import newHazelnut from "../../assets/newHazelnut-removebg-preview.png";
-import corn from "../../assets/corn-removebg-preview.png";
-import almonds from "../../assets/almonds-removebg-preview.png";
-import star from "../../assets/Star.svg";
+import bgShopPattern from "../../assets/shopImages/shopBgPatterns.png";
+import shopImage from "../../assets/shopImages/ShopImage.png";
+import broccoli from "../../assets/homeImages/broccoli-removebg-preview.png";
+import bananas from "../../assets/homeImages/bananas-removebg-preview.png";
+import nuts from "../../assets/homeImages/nuts-removebg-preview.png";
+import tomatos from "../../assets/homeImages/tomatos-removebg-preview.png";
+import bean from "../../assets/homeImages/bean-removebg-preview.png";
+import hazelnut from "../../assets/homeImages/hazelnut-removebg-preview.png";
+import russianBread from "../../assets/homeImages/russianBread-removebg-preview.png";
+import eggs from "../../assets/homeImages/eggs-removebg-preview.png";
+import newcucumber from "../../assets/shopImages/shopCucumber-removebg-preview.png";
+import newHazelnut from "../../assets/shopImages/newHazelnut-removebg-preview.png";
+import corn from "../../assets/shopImages/corn-removebg-preview.png";
+import almonds from "../../assets/shopImages/almonds-removebg-preview.png";
+import star from "../../assets/icon/Star.svg";
+
+
 import styles from "./Shop.module.css";
 
 const Shop = () => {

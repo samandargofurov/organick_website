@@ -1,6 +1,6 @@
-import cart from "../../assets/cart.svg";
-import search from "../../assets/search.svg";
-import logo from "../../assets/Logo.svg";
+import cart from "../../assets/icon/cart.svg";
+import search from "../../assets/icon/search.svg";
+import logo from "../../assets/icon/Logo.svg";
 import { NavLink } from "react-router-dom";
 
 import styles from './Header.module.css'
@@ -20,8 +20,8 @@ const Header = () => {
             </NavLink>
             {/* navbar */}
             <div className={styles.navbar}>
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/" className={styles.home}>Home</NavLink>
+              <NavLink to="/about" className={styles.about}>About</NavLink>
               <select>
                 <option value="pages" selected>
                   Pages
@@ -34,9 +34,9 @@ const Header = () => {
                 <option value="licenses">Licenses</option>
                 <option value="changelog">Changelog</option>
               </select>
-              <NavLink to="/shop">Shop</NavLink>
-              <NavLink to="/projects">Projects</NavLink>
-              <NavLink to="/news">News</NavLink>
+              <NavLink to="/shop" className={styles.shop}>Shop</NavLink>
+              <NavLink to="/projects" className={styles.projects}>Projects</NavLink>
+              <NavLink to="/news" className={styles.news}>News</NavLink>
             </div>
             {/* search_cart */}
             <div className={styles.search_cart}>

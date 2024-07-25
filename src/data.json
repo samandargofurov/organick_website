@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "type": "Vegetable",
+        "img": "./assets/homeImages/broccoli-removebg-preview.png",
+        "name": "Calabrese Broccoli",
+        "oldPrice": 20.00,
+        "newPrice": 13.00,
+        "star": "./assets/icon/Star.svg"
+    },
+    {
+        "id": 2,
+        "type": "Fresh",
+        "img": "./assets/homeImages/bananas-removebg-preview.png",
+        "name": "Fresh Banana Fruites",
+        "oldPrice": 20.00,
+        "newPrice": 14.00,
+        "st ar": "./assets/icon/Star.svg"
+    },
+    {
+        "id": 3,
+        "type": "Millets",
+        "img": "./assets/homeImages/nuts-removebg-preview.png",
+        "name": "White Nuts",
+        "oldPrice": 20.00,
+        "newPrice": 15.00,
+        "star": "./assets/icon/Star.svg"
+    },
+    {
+        "id": 4,
+        "type": "Vegetable",
+        "img": "./assets/homeImages/tomatos-removebg-preview.png",
+        "name": "Vegan Red Tomato",
+        "oldPrice": 20.00,
+        "newPrice": 17.00,
+        "star": "./assets/icon/Star.svg"
+    }
+]

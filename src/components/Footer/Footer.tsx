@@ -1,9 +1,9 @@
-import footerOrganicLogo from "../../assets/Logo.svg";
-import insta from "../../assets/Insta.svg";
-import facebook from "../../assets/Fb.svg";
-import x from "../../assets/Twiter.svg";
-import pintrest from "../../assets/Pintrest.svg";
-import footerImg from "../../assets/BackgroundFooter.png";
+import footerOrganicLogo from "../../assets/icon/Logo.svg";
+import insta from "../../assets/icon/Insta.svg";
+import facebook from "../../assets/icon/Fb.svg";
+import x from "../../assets/icon/Twiter.svg";
+import pintrest from "../../assets/icon/Pintrest.svg";
+import footerImg from "../../assets/footerImages/BackgroundFooter.png";
 
 import styles from "./Footer.module.css";
 

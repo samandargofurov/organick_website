@@ -1,22 +1,35 @@
-import { Route, Routes } from 'react-router-dom'
-import './App.css'
-import Home from './pages/Home/Home'
-import Layout from './layout'
-import About from './pages/About/About'
-import Shop from './pages/Shop/Shop'
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Layout from "./layout";
+import About from "./pages/about/About";
+import Shop from "./pages/shop/Shop";
+
+const routes = [
+  {
+    path: "",
+    element: <Home />,
+    layout: "layout",
+  },
+  {
+    path: "/about",
+    element: <About />,
+    layout: "layout",
+  },
+  {
+    path: "/shop",
+    element: <Shop />,
+    layout: "layout",
+  },
+];
 
 const App = () => {
   return (
-    <>
-      <Routes>
-        <Route path='/' element={<Layout><Home></Home></Layout>}></Route>
-        <Route path='/about' element={<Layout><About></About></Layout>}></Route>
-        <Route path='/shop' element={<Layout><Shop></Shop></Layout>}></Route>
-        <Route path='/shop' element={<Layout><Shop></Shop></Layout>}></Route>
-        <Route path='/shop' element={<Layout><Shop></Shop></Layout>}></Route>
-      </Routes>
-    </>
-  )
-}
+    <Routes>
+      {routes?.map((route, index) => (
+        <Route key={index} path={route.path} element={route?.layout === "layout" ? <Layout>{route.element}</Layout> : route.element} />
+      ))}
+    </Routes>
+  );
+};
 
-export default App
+export default App;

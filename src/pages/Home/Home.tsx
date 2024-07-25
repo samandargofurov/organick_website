@@ -1,40 +1,51 @@
-import organicFood from "../../assets/organic.png";
-import orderImg from "../../assets/order.png";
-import bg2 from "../../assets/Photo.png";
-import natural from "../../assets/natural.png";
-import offer from "../../assets/offer.png";
-import arrow from "../../assets/Aerrow.svg";
-import bgImage from "../../assets/Background.png";
-import bg3 from "../../assets/Background2.png";
-import image from "../../assets/Image.png";
-import broccoli from "../../assets/broccoliMungBean-removebg-preview.png";
-import cabbage from "../../assets/cabbage-removebg-preview.png";
-import cucumber from "../../assets/cucumber-removebg-preview.png";
-import onion from "../../assets/onion-removebg-preview.png";
-import ecoFarm from "../../assets/background3.png";
-import juice from "../../assets/organicJuice.png";
-import food from "../../assets/organicFood.png";
-import nutsCookis from "../../assets/nutsCookis.png";
-import barg from "../../assets/barg.png";
-import tometos from "../../assets/tomatoss.png";
-import woman from "../../assets/woman.svg";
-import user from "../../assets/user.svg";
-import star from "../../assets/Star.svg";
+import organicFood from "../../assets/homeImages/organic.png";
+import orderImg from "../../assets/homeImages/order.png";
+import bg2 from "../../assets/homeImages/Photo.png";
+import natural from "../../assets/homeImages/natural.png";
+import offer from "../../assets/homeImages/offer.png";
+import bgImage from "../../assets/homeImages/Background.png";
+import bg3 from "../../assets/homeImages/Background2.png";
+import image from "../../assets/homeImages/Image.png";
+import broccoli from "../../assets/homeImages/broccoliMungBean-removebg-preview.png";
+import cabbage from "../../assets/homeImages/cabbage-removebg-preview.png";
+import cucumber from "../../assets/homeImages/cucumber-removebg-preview.png";
+import onion from "../../assets/homeImages/onion-removebg-preview.png";
+import ecoFarm from "../../assets/homeImages/background3.png";
+import juice from "../../assets/homeImages/organicJuice.png";
+import food from "../../assets/homeImages/organicFood.png";
+import nutsCookis from "../../assets/homeImages/nutsCookis.png";
+import barg from "../../assets/homeImages/barg.png";
+import tometos from "../../assets/homeImages/tomatoss.png";
+import arrow from "../../assets/icon/Aerrow.svg";
+import woman from "../../assets/icon/woman.svg";
+import user from "../../assets/icon/user.svg";
+import star from "../../assets/icon/Star.svg";
+
+import data from "../../data.json";
 
 import styles from "./Home.module.css";
 import Card from "../../components/Card/Card";
 import { NavLink } from "react-router-dom";
 
-const Home = () => {
+interface HomePage {
+  type: string;
+  img: string;
+  name: string;
+  oldPrice: number;
+  newPrice: number;
+  star: string;
+}
+
+const Home: React.FC<HomePage> = () => {
   return (
     <>
       <div className={styles.images}>
-        <span className={styles.absImg1}>
-          <img src={bgImage} alt="" width={1349} />
-        </span>
-        <span className={styles.absImg}>
-          <img src={image} alt="" width={1349} />
-        </span>
+        <div className={styles.firstImg}>
+          <img className={styles.absImg1} src={bgImage} alt="" width={1348} />
+        </div>
+        <div className={styles.secondImg}>
+          <img className={styles.absImg} src={image} alt="" width={1348} />
+        </div>
       </div>
       {/* container */}
       <div className={styles.container}>
@@ -127,7 +138,13 @@ const Home = () => {
         <p className={styles.products_title}>Our Products</p>
 
         <div className={styles.container}>
-          <Card></Card>
+          {data &&
+            data.map((el) => {
+              return <Card key={el.id} />;
+            })}
+          <button className={styles.blackBTN}>
+            Load More <img src={arrow} alt="Load More" />
+          </button>
         </div>
       </div>
 
