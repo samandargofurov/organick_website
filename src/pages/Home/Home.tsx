@@ -21,10 +21,10 @@ import woman from "../../assets/icon/woman.svg";
 import user from "../../assets/icon/user.svg";
 import star from "../../assets/icon/Star.svg";
 
-import data from "../../data.json";
+// import data from "../../data.json";
 
 import styles from "./Home.module.css";
-import Card from "../../components/Card/Card";
+// import Card from "../../components/Card/Card";
 import { NavLink } from "react-router-dom";
 
 interface HomePage {
@@ -138,10 +138,10 @@ const Home: React.FC<HomePage> = () => {
         <p className={styles.products_title}>Our Products</p>
 
         <div className={styles.container}>
-          {data &&
+          {/* {data &&
             data.map((el) => {
               return <Card key={el.id} />;
-            })}
+            })} */}
           <button className={styles.blackBTN}>
             Load More <img src={arrow} alt="Load More" />
           </button>
