@@ -27,16 +27,7 @@ import styles from "./Home.module.css";
 // import Card from "../../components/Card/Card";
 import { NavLink } from "react-router-dom";
 
-interface HomePage {
-  type: string;
-  img: string;
-  name: string;
-  oldPrice: number;
-  newPrice: number;
-  star: string;
-}
-
-const Home: React.FC<HomePage> = () => {
+const Home = () => {
   return (
     <>
       <div className={styles.images}>
