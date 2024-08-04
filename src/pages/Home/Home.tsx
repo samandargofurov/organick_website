@@ -62,7 +62,7 @@ const Home: React.FC<HomePage> = () => {
         {/* section */}
         <div className={styles.section}>
           <div className={styles.leftSidebar}>
-            <img className={styles.natural} src={natural} alt="" width={490} />
+            <img className={styles.natural} src={natural} alt="" width={495} />
             <div className={styles.leftSidebar_title}>
               <h3>Natural!!</h3>
               <p>
@@ -71,7 +71,7 @@ const Home: React.FC<HomePage> = () => {
             </div>
           </div>
           <div className={styles.rightSidebar}>
-            <img className={styles.offer} src={offer} alt="" width={500} />
+            <img className={styles.sectionRightImg} src={offer} alt="" width={495} />
             <div className={styles.rightSidebar_title}>
               <h3>Offer!!</h3>
               <p>
@@ -86,7 +86,7 @@ const Home: React.FC<HomePage> = () => {
         <div className={styles.container}>
           <div className={styles.about}>
             <div className={styles.imgSidebar}>
-              <img src={bg2} alt="" width={650} height={700} />
+              <img src={bg2} alt="" width={650} height={670} />
             </div>
             <div className={styles.textSidebar}>
               <h2 className={styles.about_title}>About Us</h2>
@@ -101,7 +101,7 @@ const Home: React.FC<HomePage> = () => {
 
               <div className={styles.organic_food}>
                 <span>
-                  <img src={organicFood} alt="" width={90} />
+                  <img src={organicFood} alt="" width={85} />
                 </span>
                 <div className={styles.text1}>
                   <h6>Organic Foods Only</h6>
@@ -113,7 +113,7 @@ const Home: React.FC<HomePage> = () => {
               </div>
               <div className={styles.order}>
                 <span>
-                  <img src={orderImg} alt="" width={90} />
+                  <img src={orderImg} alt="" width={85} />
                 </span>
                 <div className={styles.text2}>
                   <h5>Quality Standards</h5>
@@ -151,30 +151,30 @@ const Home: React.FC<HomePage> = () => {
       {/* Testimonial */}
 
       <div className={styles.bg_img}>
-        <img src={bg3} alt="" />
+        <img src={bg3} alt="" height={920} />
         <div className={styles.testimonial_container}>
           <h6 className={styles.testimonial_title}>Testimonial</h6>
           <p className={styles.testimonial_titleDesc}>
             What Our Customer Saying?
           </p>
           <span className={styles.woman}>
-            <img src={woman} alt="" width={110} height={110} />
+            <img src={woman} alt="" width={100} height={100} />
           </span>
           <div className={styles.stars}>
             <span className={styles.star}>
-              <img src={star} alt="" width={26} height={26} />
+              <img src={star} alt="" width={20} height={20} />
             </span>
             <span className={styles.star}>
-              <img src={star} alt="" width={26} height={26} />
+              <img src={star} alt="" width={20} height={20} />
             </span>
             <span className={styles.star}>
-              <img src={star} alt="" width={26} height={26} />
+              <img src={star} alt="" width={20} height={20} />
             </span>
             <span className={styles.star}>
-              <img src={star} alt="" width={26} height={26} />
+              <img src={star} alt="" width={20} height={20} />
             </span>
             <span className={styles.star}>
-              <img src={star} alt="" width={26} height={26} />
+              <img src={star} alt="" width={20} height={20} />
             </span>
           </div>
           <div className={styles.testimonial_desc}>
@@ -222,7 +222,7 @@ const Home: React.FC<HomePage> = () => {
       {/* offer */}
 
       <div className={styles.offer_bgImg}>
-        <div className={styles.container}>
+        <div className={styles.offer_container}>
           <div className={styles.offer}>
             <div className={styles.offerText}>
               <div className={styles.leftOfferText}>
@@ -237,88 +237,7 @@ const Home: React.FC<HomePage> = () => {
             </div>
             {/* products */}
             <div className={styles.offerProducts}>
-              <div className={styles.cards}>
-                <div className={styles.card}>
-                  <span className={styles.title}>Vegetable</span>
-                  <span className={styles.image}>
-                    <img src={broccoli} alt="broccoli img" width={250} />
-                  </span>
-                  <span className={styles.img_title}>Mung Bean</span>
-                  <div className={styles.degree}>
-                    <div className={styles.price}>
-                      <span className={styles.old_price}>$20.00</span>
-                      <span className={styles.new_price}>$11.00</span>
-                    </div>
-                    <div className={styles.offer_stars}>
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.card}>
-                  <span className={styles.title}>Vegetable</span>
-                  <span className={styles.image}>
-                    <img src={cucumber} alt="broccoli img" width={155} />
-                  </span>
-                  <span className={styles.img_title}>Brown Hazelnut</span>
-                  <div className={styles.degree}>
-                    <div className={styles.price}>
-                      <span className={styles.old_price}>$20.00</span>
-                      <span className={styles.new_price}>$12.00</span>
-                    </div>
-                    <div className={styles.offer_stars}>
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.card}>
-                  <span className={styles.title}>Vegetable</span>
-                  <span className={styles.image}>
-                    <img src={onion} alt="broccoli img" width={230} />
-                  </span>
-                  <span className={styles.img_title}>Onion</span>
-                  <div className={styles.degree}>
-                    <div className={styles.price}>
-                      <span className={styles.old_price}>$20.00</span>
-                      <span className={styles.new_price}>$17.00</span>
-                    </div>
-                    <div className={styles.offer_stars}>
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.card}>
-                  <span className={styles.title}>Vegetable</span>
-                  <span className={styles.image}>
-                    <img src={cabbage} alt="broccoli img" width={230} />
-                  </span>
-                  <span className={styles.img_title}>Cabbage</span>
-                  <div className={styles.degree}>
-                    <div className={styles.price}>
-                      <span className={styles.old_price}>$20.00</span>
-                      <span className={styles.new_price}>$17.00</span>
-                    </div>
-                    <div className={styles.offer_stars}>
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                      <img className={styles.star} src={star} alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div className={styles.cards}></div>
             </div>
           </div>
         </div>
@@ -401,7 +320,7 @@ const Home: React.FC<HomePage> = () => {
           <div className={styles.twoProductsComment}>
             <div className={styles.firstComment}>
               <span className={styles.barg_img}>
-                <img src={barg} alt="" width={534} />
+                <img src={barg} alt="" width={500} />
               </span>
               <div className={styles.firstText}>
                 <div className={styles.date}>
@@ -430,7 +349,7 @@ const Home: React.FC<HomePage> = () => {
 
             <div className={styles.secondComment}>
               <span>
-                <img src={tometos} alt="" width={534} />
+                <img src={tometos} alt="" width={500} />
               </span>
               <div className={styles.secondText}>
                 <div className={styles.date}>
