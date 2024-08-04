@@ -6,10 +6,6 @@ import offer from "../../assets/homeImages/offer.png";
 import bgImage from "../../assets/homeImages/Background.png";
 import bg3 from "../../assets/homeImages/Background2.png";
 import image from "../../assets/homeImages/Image.png";
-// import broccoli from "../../assets/homeImages/broccoliMungBean-removebg-preview.png";
-// import cabbage from "../../assets/homeImages/cabbage-removebg-preview.png";
-// import cucumber from "../../assets/homeImages/cucumber-removebg-preview.png";
-// import onion from "../../assets/homeImages/onion-removebg-preview.png";
 import ecoFarm from "../../assets/homeImages/background3.png";
 import juice from "../../assets/homeImages/organicJuice.png";
 import food from "../../assets/homeImages/organicFood.png";
@@ -21,10 +17,8 @@ import woman from "../../assets/icon/woman.svg";
 import user from "../../assets/icon/user.svg";
 import star from "../../assets/icon/Star.svg";
 
-// import data from "../../data.json";
 
 import styles from "./Home.module.css";
-// import Card from "../../components/Card/Card";
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
